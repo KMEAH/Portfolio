@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Keita Mohamed</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#experience">Expérience</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Keita Mohamed</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">À propos</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Expérience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projets</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.png" alt="Photo de profil de Keita Mohamed" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Salut, je suis</p>
+      <h1 class="title"><span class="typing-name">Keita Mohamed</span></h1>
+      <p class="section__text__p2"><span class="typing-job">Développeur Full Stack & Étudiant en Cybersécurité</span></p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/KEITA_CV.pdf')">
+          Télécharger CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Me contacter
+        </button>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">En savoir plus</p>
+    <h1 class="title">À propos de moi</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic.png" alt="Photo de profil" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Icône expérience" class="icon" />
+            <h3>Expérience</h3>
+            <p>1+ an <br />Développement Full Stack</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Icône éducation" class="icon" />
+            <h3>Éducation</h3>
+            <p>Licence en Systèmes et Réseaux<br />Master en Cybersécurité (en cours)</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Développeur d’applications web passionné, actuellement étudiant en cybersécurité à ESATIC. Je conçois des
+            solutions web efficaces et sécurisées avec des technologies comme Django et JavaScript, tout en renforçant mes
+            compétences dans la protection des systèmes informatiques et la gestion des risques numériques.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Icône flèche" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Découvrez</p>
+    <h1 class="title">Mes Compétences</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Développement Frontend</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Icône compétence" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Expérimenté</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Icône compétence" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Expérimenté</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Icône compétence" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Intermédiaire</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Développement Backend</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Icône compétence" class="icon" />
+              <div>
+                <h3>Python</h3>
+                <p>Expérimenté</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Icône compétence" class="icon" />
+              <div>
+                <h3>Django</h3>
+                <p>Intermédiaire</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Icône compétence" class="icon" />
+              <div>
+                <h3>Django RestFramework</h3>
+                <p>Intermédiaire</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Icône compétence" class="icon" />
+              <div>
+                <h3>Postman</h3>
+                <p>Intermédiaire</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Outils & Déploiement</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Icône compétence" class="icon" />
+              <div>
+                <h3>GitLab/GitHub</h3>
+                <p>Intermédiaire</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Icône compétence" class="icon" />
+              <div>
+                <h3>Déploiement VPS</h3>
+                <p>Intermédiaire</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Icône compétence" class="icon" />
+              <div>
+                <h3>Canva</h3>
+                <p>Expérimenté</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Icône flèche" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Parcourez mes</p>
+    <h1 class="title">Projets</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-1.png" alt="Projet 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Système de Monitoring de Carburant</h2>
+          <p>Conception d'un système de monitoring en temps réel de la consommation de carburant d'un groupe électrogène pour Orange Digital Center.</p>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="Projet 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Application de Gestion de Stock</h2>
+          <p>Développement et déploiement d'une application web Django pour la gestion de stock et d'achats d'un magasin, avec maintenance continue.</p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Icône flèche" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <h1 class="title">Contactez-moi</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Icône email" class="icon contact-icon email-icon" />
+        <p><a href="mailto:keitamohamed1432@gmail.com">keitamohamed1432@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/phone.png" alt="Icône téléphone" class="icon contact-icon" />
+        <p><a href="tel:+2250151352611">+225 01 51 35 26 11</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="Icône LinkedIn" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/mohamed-ebonn-al-hassan-keita-750260313?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#experience">Expérience</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright © 2025 Keita Mohamed. Tous droits réservés.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
